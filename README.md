@@ -7,7 +7,7 @@
 page
 ├ ServerComponentA
 |  └ ClientComponentA
-└ SlientComponentB
+└ ServerComponentB
    └ ClientComponentB
 ```
 
