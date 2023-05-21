@@ -3,7 +3,7 @@ import { useAtom } from 'jotai';
 import type { NextPage } from 'next';
 import Link from 'next/link';
 
-const pageTrialA: NextPage = (): JSX.Element => {
+const PageTrialA: NextPage = (): JSX.Element => {
   const [globalNum, setGlobalNum] = useAtom(globalNumAtom);
 
   const handlePlus = (): void => {
@@ -11,7 +11,7 @@ const pageTrialA: NextPage = (): JSX.Element => {
   };
 
   const handleMinus = (): void => {
-    setGlobalNum((value: number) => value + 1);
+    setGlobalNum((value: number) => value - 1);
   };
 
   return (
@@ -29,4 +29,4 @@ const pageTrialA: NextPage = (): JSX.Element => {
   );
 };
 
-export default pageTrialA;
+export default PageTrialA;
